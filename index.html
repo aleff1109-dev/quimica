@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09080b">
+  <meta name="description" content="Uma viagem interativa pelo hélio: conheça o elemento que resfria ímãs de ressonância e faz balões flutuarem.">
+  <title>Hélio — o elemento que ilumina o universo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Hélio, início"><span class="wordmark-dot"></span> ELEMENTO Nº 02</a>
+    <a class="header-link" href="#descoberta">Explore o elemento <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> UMA JORNADA PELO UNIVERSO</p>
+        <h1 id="hero-title">O elemento<br>que <em>ilumina</em><br>o universo.</h1>
+        <p class="hero-description">Leve como o ar. Nascido nas estrelas.<br>Indispensável aqui na Terra.</p>
+        <button class="discover-button" type="button" data-enter>
+          <span class="button-icon" aria-hidden="true">↓</span> Descubra o hélio
+        </button>
+      </div>
+
+      <button class="element-stage" type="button" data-enter aria-label="Explorar o elemento hélio">
+        <span class="orbit orbit-one" aria-hidden="true"></span>
+        <span class="orbit orbit-two" aria-hidden="true"></span>
+        <span class="orbit orbit-three" aria-hidden="true"></span>
+        <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+        <span class="sparkle sparkle-three" aria-hidden="true">·</span>
+        <span class="element-tile" aria-hidden="true">
+          <span class="tile-number">2</span><span class="tile-symbol">He</span><span class="tile-name">HÉLIO</span>
+          <span class="tile-weight">4.0026</span>
+        </span>
+        <span class="stage-hint">TOQUE PARA EXPLORAR <span aria-hidden="true">↗</span></span>
+      </button>
+
+      <div class="hero-footer"><span>HÉLIO <span class="muted">/</span> He</span><span>O SEGUNDO ELEMENTO</span><span>01 — 05</span></div>
+      <div class="scroll-note" aria-hidden="true">ROLE PARA EXPLORAR <span>↓</span></div>
+    </section>
+
+    <section class="story" id="exploracao" aria-labelledby="story-title" inert>
+      <div class="story-top"><a class="back-link" href="#inicio" data-back>← <span>Voltar ao início</span></a><span class="story-index">ELEMENTO Nº 02 <span>·</span> HÉLIO</span></div>
+
+      <section class="intro section-shell" aria-labelledby="story-title">
+        <div class="section-kicker">01 <span></span> CONHEÇA O ELEMENTO</div>
+        <div class="intro-grid">
+          <div><p class="eyebrow">H — HE — LI — UM</p><h2 id="story-title">Pequeno no átomo.<br><em>Imenso no universo.</em></h2></div>
+          <p class="intro-text">O hélio é o segundo elemento mais abundante do cosmos — e um dos mais discretos na Terra. Invisível, inodoro e quase sempre indiferente às reações químicas, ele guarda histórias que começam no coração das estrelas.</p>
+        </div>
+        <div class="facts-strip" aria-label="Dados do hélio">
+          <div class="fact"><span>NÚMERO ATÔMICO</span><strong>02</strong></div>
+          <div class="fact"><span>SÍMBOLO</span><strong>He</strong></div>
+          <div class="fact"><span>MASSA ATÔMICA</span><strong>4,0026 <small>u</small></strong></div>
+          <div class="fact"><span>ESTADO NATURAL</span><strong>Gasoso</strong></div>
+        </div>
+      </section>
+
+      <section class="discovery section-shell" id="descoberta" aria-labelledby="discovery-title">
+        <div class="section-kicker">02 <span></span> UMA DESCOBERTA ESTELAR</div>
+        <div class="discovery-grid">
+          <div><h2 id="discovery-title">Primeiro no Sol.<br><em>Depois na Terra.</em></h2><p>Em 1868, uma linha amarela desconhecida apareceu na luz solar observada durante um eclipse. Astrônomos reconheceram um elemento novo e o batizaram em homenagem a Hélio, deus grego do Sol.</p><p>Quase três décadas depois, em 1895, William Ramsay identificou hélio na Terra ao estudar um mineral rico em urânio.</p></div>
+          <div class="timeline" aria-label="Linha do tempo da descoberta">
+            <div class="timeline-item"><span>1868</span><div><strong>Um sinal na luz do Sol</strong><p>Pierre Janssen e Norman Lockyer observam uma linha espectral inédita.</p></div></div>
+            <div class="timeline-item"><span>1895</span><div><strong>Encontrado na Terra</strong><p>William Ramsay isola hélio a partir de um mineral com urânio.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="universe-section" aria-labelledby="universe-title"><div class="universe-glow" aria-hidden="true"></div><div class="section-shell universe-content"><div class="section-kicker">03 <span></span> DE ONDE VEM?</div><h2 id="universe-title">Feito nas estrelas.<br><em>Encontrado sob nossos pés.</em></h2><p>No interior das estrelas, a fusão de átomos de hidrogênio produz hélio e libera energia. Na Terra, ele também se forma lentamente pelo decaimento radioativo de elementos como urânio e tório, acumulando-se em alguns depósitos subterrâneos de gás natural.</p><div class="universe-stat"><strong>2º</strong><span>elemento mais abundante do universo; na Terra, é raro na atmosfera porque escapa com facilidade.</span></div></div></section>
+
+      <section class="uses section-shell" aria-labelledby="uses-title">
+        <div class="section-kicker">04 <span></span> MAIS QUE BALÕES</div><h2 id="uses-title">Um gás discreto.<br><em>Um papel gigante.</em></h2>
+        <div class="use-grid">
+          <article class="use-card"><span class="card-number">01 / MEDICINA</span><div class="use-icon" aria-hidden="true">◉</div><h3>Ressonância magnética</h3><p>O hélio líquido mantém os ímãs supercondutores dos aparelhos em temperaturas extremamente baixas.</p></article>
+          <article class="use-card"><span class="card-number">02 / EXPLORAÇÃO</span><div class="use-icon" aria-hidden="true">↗</div><h3>Balões meteorológicos</h3><p>Por ser menos denso que o ar e não ser inflamável, o hélio ajuda balões a subirem.</p></article>
+          <article class="use-card"><span class="card-number">03 / TECNOLOGIA</span><div class="use-icon" aria-hidden="true">⌘</div><h3>Indústria e eletrônicos</h3><p>Por ser pouco reativo, protege materiais em soldagens e na fabricação de fibras ópticas e semicondutores.</p></article>
+          <article class="use-card"><span class="card-number">04 / PRECISÃO</span><div class="use-icon" aria-hidden="true">⌕</div><h3>Detecção de vazamentos</h3><p>Seus átomos pequenos se espalham com facilidade e ajudam a localizar fugas em sistemas fechados.</p></article>
+        </div>
+      </section>
+
+      <section class="properties" aria-labelledby="properties-title"><div class="section-shell properties-grid"><div><div class="section-kicker">05 <span></span> POR DENTRO DO HÉLIO</div><h2 id="properties-title">Leve, nobre<br><em>e muito frio.</em></h2><p>O hélio faz parte do grupo dos gases nobres. Sua camada eletrônica estável faz com que ele quase não reaja com outros elementos.</p></div><div class="property-list"><div><span>01</span><p>É incolor, inodoro e não inflamável.</p></div><div><span>02</span><p>É o segundo elemento mais leve da tabela periódica.</p></div><div><span>03</span><p>Seu ponto de ebulição é cerca de −268,9 °C, próximo do zero absoluto.</p></div><div><span>04</span><p>À pressão atmosférica, o hélio não se solidifica apenas por resfriamento: também é preciso aplicar pressão.</p></div></div></div></section>
+
+      <section class="care section-shell" aria-labelledby="care-title"><div class="care-mark" aria-hidden="true">!</div><div><div class="section-kicker">USO RESPONSÁVEL</div><h2 id="care-title">Leve não quer dizer<br><em>inofensivo.</em></h2><p>O hélio não é tóxico, mas inalá-lo pode deslocar o oxigênio e causar asfixia — especialmente em ambientes fechados. O hélio líquido é tão frio que pode causar lesões graves por congelamento. Como o hélio que escapa pode se perder para o espaço, recuperar e usar esse recurso com responsabilidade é importante.</p></div></section>
+
+      <section class="developer section-shell" id="desenvolvedor" aria-labelledby="developer-title">
+        <div class="section-kicker">FEITO POR</div>
+        <div class="developer-card"><div class="developer-photo" role="img" aria-label="Espaço reservado para sua foto"><img src="aleff.jpg" alt=""></div><div class="developer-copy"><p class="eyebrow">DESENVOLVEDOR</p><h2 id="developer-title">Olá, eu sou <em>Aleff.</em></h2><p>Tenho 16 anos e curso Desenvovimento de Sistemas na Etec de Guaianazes. Sou apaixonado por computadores e para mim linhas de código são como arte. </p><a href="mailto:seu.email@exemplo.com">SEU.EMAIL@EXEMPLO.COM <span aria-hidden="true">↗</span></a></div></div>
+      </section>
+
+      <section class="advisors section-shell" id="orientadores" aria-labelledby="advisors-title">
+        <div class="section-kicker">COM ORIENTAÇÃO DE</div>
+        <h2 id="advisors-title" class="advisors-title">Professores <em>orientadores.</em></h2>
+        <div class="advisor-list">
+          <article class="developer-card advisor-card">
+            <div class="developer-photo" role="img" aria-label="Espaço reservado para foto do professor orientador"><img src="allan.png" alt="allan"></div>
+            <div class="developer-copy"><p class="eyebrow">PROFESSOR(A) ORIENTADOR(A)</p><h3>Allan Vidal</h3><p>Professor da Disciplina Programação WEB II na Etec de Guaianazes</p></div>
+          </article>
+          <article class="developer-card advisor-card">
+            <div class="developer-photo" role="img" aria-label="Espaço reservado para foto do professor orientador"><img src="elaine.png" alt="elaine"></div>
+            <div class="developer-copy"><p class="eyebrow">PROFESSOR(A) ORIENTADOR(A)</p><h3>Elaine da Silva</h3><p>Professora da Disciplina Química na Etec de Guaianazes</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sources section-shell" aria-labelledby="sources-title"><div class="section-kicker">PARA SABER MAIS</div><h2 id="sources-title">Fontes consultadas</h2><ul><li><a href="https://periodic-table.rsc.org/element/2/helium" target="_blank" rel="noreferrer">Royal Society of Chemistry — Helium: element information, properties and uses ↗</a></li><li><a href="https://pubchem.ncbi.nlm.nih.gov/element/Helium" target="_blank" rel="noreferrer">PubChem — Helium (He) ↗</a></li><li><a href="https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-helium.pdf" target="_blank" rel="noreferrer">U.S. Geological Survey — Mineral Commodity Summaries 2026: Helium ↗</a></li></ul></section>
+
+      <footer class="site-footer"><a class="wordmark" href="#inicio"><span class="wordmark-dot"></span> ELEMENTO Nº 02</a><span>Todos os Direitos Reservados · 2026</span><a href="#inicio">VOLTAR AO TOPO ↑</a></footer>
+    </section>
+  </main>
+  <div class="transition-wash" aria-hidden="true"></div>
+</body>
+</html>
